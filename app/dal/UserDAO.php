@@ -8,13 +8,14 @@ class UserDAO{
 
     public function register($user){
         // Insert into table user
-        $this->db->query('INSERT INTO User (userName, userLastName, userMail, userPassword, userPhone, userGender, userStreet, userHouse)
-                          VALUES (:name, :lastName, :email, :password, :phone, :gender, :street, :house)');
+        $this->db->query('INSERT INTO user (name, lastname, email, password, userType)
+                          VALUES (:name, :lastName, :email, :password, :userType)');
         // Bind values
         $this->db->bind(':name', $user->getUserName());
         $this->db->bind(':lastName', $user->getUserLastname());
         $this->db->bind(':email', $user->getEmail());
         $this->db->bind(':password', $user->getPassword());
+        $this->db->bind(':userType', $user->getUserType());
 
         // Execute
         if($this->db->execute()){
@@ -26,14 +27,19 @@ class UserDAO{
 
     // Login user
     public function login($user){
-        $this->db->query('SELECT * FROM User WHERE userMail = :email');
+        $this->db->query('SELECT * FROM user WHERE email = :email');
         $this->db->bind(':email', $user->getEmail());
 
         $row = $this->db->single();
 
-        $hashedPassword = $row->userPassword;
+        $user->setUserId($row->userId);
+        $user->setUserName($row->name);
+        $user->setUserLastName($row->lastname);
+        $user->setUserType($row->userType);
+
+        $hashedPassword = $row->password;
         if(password_verify($user->getPassword(), $hashedPassword)){
-            return $row;
+            return $user;
         } else {
             return false;
         }
@@ -42,7 +48,7 @@ class UserDAO{
     //Find user by email
     public function findUserByEmail($email){
         // Prepare query
-        $this->db->query('SELECT * FROM User WHERE userMail = :email');
+        $this->db->query('SELECT * FROM user WHERE email = :email');
 
         //Bind values
         $this->db->bind(':email', $email);
@@ -60,7 +66,7 @@ class UserDAO{
 
     public function newPassword($token, $password){
         // Prepare query
-        $this->db->query('  UPDATE User
+        $this->db->query('UPDATE User
                             INNER JOIN Tokens
                                 ON User.userMail = Tokens.email
                             SET User.userPassword = :password

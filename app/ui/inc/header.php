@@ -2,110 +2,22 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="Cache-control" content="no-cache"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <meta
-        http-equiv="Cache-control"
-        content="no-cache"
-    />
+    <title> <?php echo SITENAME; ?> </title>
 
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="<?php echo URLROOT; ?>/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo URLROOT; ?>/css/index.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo URLROOT; ?>/css/register.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo URLROOT; ?>/css/generic.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo URLROOT; ?>/css/homeStyling.css" rel="stylesheet" type="text/css">
 
-    <title>
-        <?php
-            echo SITENAME;
-        ?>
-    </title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="<?php echo URLROOT; ?>/js/homeFunctions.js"></script>
 
-    <link
-        rel="stylesheet"
-        type="text/css"
-        href="<?php echo URLROOT; ?>/css/style.css?version=3.2"
-    />
-
-    <link
-            rel="stylesheet"
-            type="text/css"
-            href="<?php echo URLROOT; ?>/css/tickets.css"
-    />
-
-    <link
-            rel="stylesheet"
-            type="text/css"
-            href="<?php echo URLROOT; ?>/css/generic.css?version=3.2"
-    />
-
-    <link
-            rel="stylesheet"
-            type="text/css"
-            href="<?php echo URLROOT; ?>/css/jazz.css?version=3.2"
-    />
-
-    <link
-            rel="stylesheet"
-            type="text/css"
-            href="<?php echo URLROOT; ?>/css/reset.css?version=3.2"
-    />
-
-    <link
-            rel="stylesheet"
-            type="text/css"
-            href="<?php echo URLROOT; ?>/css/users.css?version=3.2"
-    />
-
-    <link
-            rel="stylesheet"
-            type="text/css"
-            href="<?php echo URLROOT; ?>/css/historic.css?version=3.2"
-    />
-
-    <link
-            rel="stylesheet"
-            type="text/css"
-            href='https://fonts.googleapis.com/css?family=Lato:300,400,700'
-    />
-
-    <link
-        rel="stylesheet"
-        href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-        crossorigin="anonymous"
-    />
-
-    <link
-        rel="stylesheet"
-        href="path/to/font-awesome/css/font-awesome.min.css"
-    />
-
-    <link
-        href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap"
-        rel="stylesheet"
-    />
-
-    <script
-        src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
-    </script>
-
-    <script
-        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
-    </script>
-
-    <script
-        src="<?php echo URLROOT; ?>/js/main.js">
-    </script>
-
-    <script
-        src="<?php echo URLROOT; ?>/js/validator.js">
-    </script>
-
-    <script
-        src="<?php echo URLROOT; ?>/js/contact.js">
-    </script>
-
-    <script
-            src="<?php echo URLROOT; ?>/js/functions.js">
-    </script>
 </head>
 <body>

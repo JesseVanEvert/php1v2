@@ -8076,9 +8076,9 @@ class TCPDF {
 			$p = $this->_getrawstream($p);
 			$this->_out('<<'.$filter.'/Length '.strlen($p).'>> stream'."\n".$p."\n".'endstream'."\n".'endobj');
 		}
-		//Pages root
+		//Login root
 		$out = $this->_getobj(1)."\n";
-		$out .= '<< /Type /Pages /Kids [';
+		$out .= '<< /Type /Login /Kids [';
 		foreach($this->page_obj_id as $page_obj) {
 			$out .= ' '.$page_obj.' 0 R';
 		}
@@ -9722,7 +9722,7 @@ class TCPDF {
 		$out = '<< /Type /Catalog';
 		$out .= ' /Version /'.$this->PDFVersion;
 		//$out .= ' /Extensions <<>>';
-		$out .= ' /Pages 1 0 R';
+		$out .= ' /Login 1 0 R';
 		//$out .= ' /PageLabels ' //...;
 		$out .= ' /Names <<';
 		if ((!$this->pdfa_mode) AND !empty($this->n_js)) {

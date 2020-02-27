@@ -8,7 +8,7 @@
   define('DB_HOST', 'localhost');
   define('DB_USER', 'root');
   define('DB_PASS', '');
-  define('DB_NAME', 'haarlem_festival');
+  define('DB_NAME', 'php_een');
 
   // App Root
   define('APPROOT', dirname(dirname(__FILE__)));

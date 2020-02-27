@@ -1540,9 +1540,9 @@ protected function _putpages()
 		$this->PageInfo[$n]['n'] = $this->n+1+2*($n-1);
 	for($n=1;$n<=$nb;$n++)
 		$this->_putpage($n);
-	// Pages root
+	// Login root
 	$this->_newobj(1);
-	$this->_put('<</Type /Pages');
+	$this->_put('<</Type /Login');
 	$kids = '/Kids [';
 	for($n=1;$n<=$nb;$n++)
 		$kids .= $this->PageInfo[$n]['n'].' 0 R ';
@@ -1828,7 +1828,7 @@ protected function _putcatalog()
 {
 	$n = $this->PageInfo[1]['n'];
 	$this->_put('/Type /Catalog');
-	$this->_put('/Pages 1 0 R');
+	$this->_put('/Login 1 0 R');
 	if($this->ZoomMode=='fullpage')
 		$this->_put('/OpenAction ['.$n.' 0 R /Fit]');
 	elseif($this->ZoomMode=='fullwidth')

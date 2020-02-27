@@ -1,23 +1,18 @@
 <?php
-class Pages extends Controller {
-
-    public function __construct(){
-        $this->homeDal = $this->dal('HomeDAO');
-        $this->homeModel = $this->model('HomeModel');
-    }
-
+class Pages extends Controller
+{
     public function index(){
-        $eventInformation = $this->homeDal->eventInformation();
-        $allEvents = $this->homeDal->allEvents();
-        $eventDates = $this->homeDal->eventDates();
-
         $data = [
-            'title' => 'Haarlem Festival',
-            'eventInfo' => $eventInformation,
-            'events' => $allEvents,
-            'dates' => $eventDates
+            'title' => 'Welcome',
         ];
 
         $this->ui('pages/index', $data);
+    }
+
+    public function register(){
+        $data = [
+            'title' => 'Register'
+        ];
+        $this->ui('pages/register', $data);
     }
 }

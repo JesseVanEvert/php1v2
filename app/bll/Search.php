@@ -15,9 +15,9 @@
             ];
 
             if($_SERVER['REQUEST_METHOD'] == 'POST'){
-                if(!empty($_POST['searchValue'])){
+                if(!empty($_POST['search'])){
                     // Init provided search value
-                    $searchValue = $_POST['searchValue'];
+                    $searchValue = $_POST['search'];
 
                     // Get all the tables in the database
                     $tables = $this->searchDAO->getTables();
