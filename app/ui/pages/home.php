@@ -48,12 +48,34 @@ require APPROOT . '/ui/inc/navigation.php';
             </div>
         </div>
         <div class="col-md-6">
-            <div class="todolist">
+            <form class="todolist" method="post">
                 <h1>Search users</h1>
-                <input type="text" class="form-control search-user" placeholder="Name or email">
-                <button id="searchUserButton" class="btn">search</button>
-            </div>
+                <input type="text" class="form-control search-user" name="searchUser" placeholder="Name or email">
+                <button id="searchUserButton" class="btn" type="submit">search</button>
+            </form>
+            <?php
+
+            if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                // Something posted
+
+                if (isset($_POST['searchUser'])) {
+                    $nameOrEmail = $_POST['searchUser'];
+                    $users = $this->searchBLL->searchUser($nameOrEmail);
+
+                    foreach ($users as $user){
+                        echo '<p>'. $user->getUserName() ." ". $user->getUserLastName() .'</p>'.
+                             '<p>'. $user->getEmail() .'</p>'.
+                             '<p>'. $user->getUserType() .'</p>';
+                    }
+                }
+                else {
+                    // Assume btnSubmit
+                }
+            }
+            ?>
         </div>
+
+
     </div>
 </div>
 

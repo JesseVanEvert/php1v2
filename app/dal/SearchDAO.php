@@ -6,51 +6,26 @@ class SearchDAO {
       $this->db = new Database;
     }
 
-    public function getTables(){
-        // Prepare query
-        $this->db->query("SHOW TABLES");
+    public function searchUser($emailOrName){
+        $emailOrName.='%';
+        $this->db->query('SELECT * FROM user WHERE email LIKE :email OR name LIKE :name');
+        $this->db->bind(':email', $emailOrName);
+        $this->db->bind(':name', $emailOrName);
 
-        // Execute query
-        $tableArray = $this->db->resultSet();
-        
-        // Return array
-        return $tableArray;
-    }
+        $userRows = $this->db->resultSet();
+        $users = array();
 
-    public function getColumns($table){
-        // Prepare query
-        $this->db->query('  SELECT * 
-                            FROM INFORMATION_SCHEMA.COLUMNS
-                            WHERE TABLE_NAME = :table AND TABLE_SCHEMA = "haarlem_festival"
-                            ');
+        foreach ($userRows as $userRow){
+            $user = new UserModel();
+            $user->setUserId($userRow->userId);
+            $user->setUserName($userRow->name);
+            $user->setUserLastName($userRow->lastname);
+            $user->setUserType($userRow->userType);
+            $user->setEmail($userRow->email);
 
-        // Bind values
-        $this->db->bind(':table', $table);
+            array_push($users, $user);
+        }
 
-
-        // Execute query
-        $columnArray = $this->db->resultSet();
-        
-        // Return array
-        return $columnArray;
-    }
-
-    public function searchDB($table, $column, $value){
-        // Prepare query
-        $this->db->query("  SELECT * FROM `:tableName` WHERE `:column` LIKE ':value'
-                            "); 
-        //die($table . " | " . $column . " | " . $value);
-        // Bind values 
-        $this->db->bind(':tableName', $table);
-        $this->db->bind(':column', $column);
-        $this->db->bind(':value', $value); 
-        
-
-        //$this->db->returnStatement();
-        // Execute query
-        $resultArray = $this->db->resultSet();
-        //die(var_dump($resultArray)); 
-        // Return array
-        return $resultArray;
+        return $users;
     }
 }

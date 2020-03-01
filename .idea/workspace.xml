@@ -2,112 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7c196af-65c0-482e-8711-435ac316e21d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/bll/Login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/bll/Todo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/model/GroupModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/model/ToDoModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/ui/pages/home.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/ui/pages/register.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/homeStyling.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/register.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/homeFunctions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bll/Pages.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/bll/Pages.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/bll/Search.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/bll/Search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bll/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/bll/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/bootstrap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/dal/HomeDAO.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/dal/UserDAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/dal/UserDAO.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/session_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/session_helper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/libraries/Core.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/libraries/Core.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/libraries/FPDF/fpdf.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/libraries/FPDF/fpdf.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/libraries/TCPDF/tcpdf.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/libraries/TCPDF/tcpdf.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/model/ContentModel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/model/HomeModel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/model/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/model/UserModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ui/inc/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/ui/inc/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ui/inc/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/ui/inc/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ui/inc/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/ui/inc/navigation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ui/js/ShoppingCartFunctions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ui/js/functions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ui/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ui/pages/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/ui/pages/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ui/users/register.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/ChangeProgramStyle.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/CreateUserStyle.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/DashboardStyle.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/EditContentStyle.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/custom.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/generic.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/generic.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/historic.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/jazz.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/tickets.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/users.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/html/jazz.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/adminuserimg/userIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/dance/afrojack.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/dance/armin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/dance/banner-dance.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/dance/banner-dance.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/dance/hardwell.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/dance/martin.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/dance/nicky.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/dance/tiesto.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/food/brinkman.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/food/bull.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/food/food-banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/food/fris.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/food/mrandmrs.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/food/ratatouille.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/food/restaurantml.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/food/specktakel.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/food/toujours.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/frontpage-dance.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/frontpage-food.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/frontpage-historic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/frontpage-jazz.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/frontpage-kids.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/gare-du-nord-crossselling.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/gare.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/hero-background-haarlem.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/historic/adriaan.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/historic/adriaan_breed.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/historic/amsterdamse_poort.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/historic/bakenes.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/historic/bavo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/historic/grote_markt.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/historic/jopenkerk.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/historic/proveniershof.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/historic/vleeshal.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/historic/vleeshal_breed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/historic/waalse_kerk.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/kids/Kop_Op.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/kids/MrPaper.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/kids/artist_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/kids/emily.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/kids/eryk.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/kids/jonas.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/kids/kids_banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/kids/kids_banner_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/kids/passing.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/molen.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/nordanians.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/purplebb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/restaurant-crossselling.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/shopping-cart/delete.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/shopping-cart/ideal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/shopping-cart/mastercard.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/shopping-cart/paypal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/shopping-cart/shopping-cart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/soul.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/vleeshal.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/bll/Todo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/bll/Todo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dal/SearchDAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/dal/SearchDAO.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/model/UserType.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/model/UserType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ui/pages/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/ui/pages/home.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -195,7 +95,10 @@
       <workItem from="1582725619896" duration="5910000" />
       <workItem from="1582749940624" duration="1574000" />
       <workItem from="1582792432840" duration="12402000" />
-      <workItem from="1582828835439" duration="2673000" />
+      <workItem from="1582828835439" duration="2875000" />
+      <workItem from="1582898660113" duration="1923000" />
+      <workItem from="1582986062469" duration="3613000" />
+      <workItem from="1582997731073" duration="4527000" />
     </task>
     <servers />
   </component>
